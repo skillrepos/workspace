@@ -30,15 +30,43 @@
 
 4. We're going to create a project from scratch, so click on the *Create new repository* link.
 
+![Create new repository start](./images/ws3.png?raw=true "Create new repository start")
+
 5. Let's give Workspace a goal to create a simple tic-tac-toe game. In the task area, enter the command below.
 
 ```
 create a tic-tac-toe game
 ```
 
-6. Now, let's cut straight to the implementation. Click on the green *Generate plan* button below the dialog area and then select tehe 
+![Add new goal](./images/ws4.png?raw=true "Add new goal")
+
+6. Now, let's cut straight to the implementation. Click on the green *Generate plan* button below the dialog area and then select the *Generate Code* button.
+
+![Generate code](./images/ws4.png?raw=true "Generate code")
+
+7. This will run for a while to generate all the code for your project.
+
+8. After this is done, we'll create a repository to put our code in. In the upper right of the main Workspace screen, click on the *Create repository* screen.
+
+![Create repo](./images/ws5.png?raw=true "Create repo")
+
+9. Clicking on this button opens a dialog with a suggested name for the repo and a place for a description. The dialog includes a button to click to automatically generate the initial commit message. Click on that.
+
+![Generate commit info](./images/ws6.png?raw=true "Generate commit info")
+
+10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*.
    
-![Creating file from terminal](./images/cdd173.png?raw=true "Creating file from terminal")
+![Opening in GitHub](./images/ws7.png?raw=true "Opening in GitHub")
+
+11. From here, you can clone your repository down locally and then run it - usually by opening up the index.html file.
+
+```
+git clone <path to repo>
+cd <repo>
+open index.html
+```
+
+![Running the game](./images/ws8.png?raw=true "Running the game")
 
 2. Afterwards this file should be open in a tab in the editor.
 
