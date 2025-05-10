@@ -68,11 +68,85 @@ open index.html
 
 ![Running the game](./images/ws8.png?raw=true "Running the game")
 
-2. Afterwards this file should be open in a tab in the editor.
+ <p align="center">
+**[END OF LAB]**
+</p>
+</br></br></br>
 
-3. Let's see how Copilot responds to a generic request. Go to that tab and type in a comment that says
+
+**Lab 2 - A more refined game**
+
+**Purpose: In this lab, we’ll create a more defined instance of our game by working through the formal process**
+
+1. Let's start by adding a very specific definition to Workspace of what we want. We wouldn't have to be this specific at all, but this will help ensure we get more accuracy and consistency in the result. In the task area, copy and paste the following requirement.
 
 ```
+Add Tic-Tac-Toe Game
+
+Task:
+  • Implement a browser-based Tic-Tac-Toe game playable by two users  
+  • Render a 3×3 grid of clickable cells  
+  • Alternate X and O marks on each click  
+  • Detect and display when one player wins or when the game is a draw  
+  • Provide a “Restart” button to reset the board  
+
+Dependencies & Components:
+  • UI framework: React (v18+) **or** vanilla HTML/CSS/JS  
+  • Files:  
+      – `index.html` (root container)  
+      – `styles.css` (grid layout & styling)  
+      – `App.jsx` or `app.js` (game logic & rendering)  
+      – `GameBoard.jsx` / `GameBoard.js` (grid component)  
+      – `Square.jsx` / `Square.js` (cell component)  
+  • Core functions:  
+      – `handleClick(cellIndex)` to place mark  
+      – `calculateWinner(cells: string[9]) → string|null`  
+      – `resetGame()` to clear board state  
+
+Acceptance Criteria:
+  • A 3×3 board appears on page load  
+  • Clicking an empty cell places “X” then “O” on alternating turns  
+  • When three in a row appear (horiz, vert, diag), show “Player X wins!” or “Player O wins!”  
+  • If all cells fill without a winner, display “Draw”  
+  • “Restart” button clears the board and resets turn order  
+```
+
+![Detailed requirements](./images/ws9.png?raw=true "Detailed requirements")
+
+2. Now, click the *Brainstorm* button to go to the initial *brainstorming/planning* page.
+
+![Brainstorm](./images/ws10.png?raw=true "Brainstorm")
+
+3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed and decide if you want to add any of them as additional tasks to the overall plan that Copilot has constructed. To add them, click the corresponding *+ Add to task* button.
+
+![Brainstorm list](./images/ws11.png?raw=true "Brainstorm list")
+
+4. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
+
+![Suggested questions](./images/ws12.png?raw=true "Suggested questions")
+
+5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*.
+
+![Adding items from question](./images/ws13.png?raw=true "Adding items from question")
+
+6. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
+
+![Generating the plan](./images/ws14.png?raw=true "Generating the plan")
+
+7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Task* area. This section lists out all the files it expects to create along with the main logic that will be implemented in each.
+
+![Plan section](./images/ws15.png?raw=true "Plan section")
+
+8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names. 
+
+![Planned files](./images/ws16.png?raw=true "Planned files")
+```
+
+ <p align="center">
+**[END OF LAB]**
+</p>
+</br></br></br>
+
 // function to parse data
 ```
 4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line. (Note that you should give Copilot a second to provide code suggestions before moving on to the next line.)
