@@ -1,19 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="20">
-  <!-- subtle gloss -->
+  <!-- subtle gloss overlay -->
   <defs>
-    <linearGradient id="b" x2="0" y2="100%">
-      <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <linearGradient id="g" x2="0" y2="100%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
       <stop offset="1" stop-opacity=".1"/>
     </linearGradient>
   </defs>
-  <!-- background blocks -->
-  <rect rx="3" width="200" height="20" fill="#555"/>
-  <rect rx="3" x="100" width="100" height="20" fill="#4c1"/>
-  <path fill="#4c1" d="M100 0h4v20h-4z"/>
-  <rect rx="3" width="200" height="20" fill="url(#b)"/>
+
+  <!-- left (dark) and right (green) backgrounds -->
+  <rect rx="3" width="200" height="20" fill="#24292f"/>
+  <rect rx="3" x="100" width="100" height="20" fill="#2ea44f"/>
+
+  <!-- overlay for a bit of sheen -->
+  <rect rx="3" width="200" height="20" fill="url(#g)"/>
+
   <!-- text -->
   <g fill="#fff" text-anchor="middle"
-     font-family="Verdana,Geneva,Segoe UI,sans-serif" font-size="11">
+     font-family="Segoe UI,Ubuntu,Cantarell,sans-serif" font-size="11">
     <text x="50"  y="14">GitHub Copilot</text>
     <text x="150" y="14">Workspace</text>
   </g>
