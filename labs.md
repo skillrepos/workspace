@@ -253,9 +253,28 @@ How to I run the tests for this app?
 
 **Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository.**
 
-1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise*. In the bar, enter the request below to add testing to our code.
+1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to Settings and then scroll down until you find the Issues checkbox and make sure it's checked.
+
+![Activating issues](./images/ws23.png?raw=true "Activating issues")
 
 
+2. Now, let's create a new issue for the feature request. Click on *Issues* at the top and then click on the button to create a new issue.
+
+![Creating new issue](./images/ws24.png?raw=true "Activating issues")
+
+3. For the issue title, you can fill in something like the text below:
+
+```
+Add option to play against the computer
+```
+
+4. For the issue description, you can add something like the text below:
+
+```
+The game should have the ability for the user to play against the computer. The player and the computer should take turns filling in their squares. The ability to play against the computer should be an option the main web page.
+```
+
+5. 
 // function to parse data
 ```
 4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line. (Note that you should give Copilot a second to provide code suggestions before moving on to the next line.)
