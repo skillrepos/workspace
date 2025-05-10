@@ -140,12 +140,121 @@ Acceptance Criteria:
 8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names. 
 
 ![Planned files](./images/ws16.png?raw=true "Planned files")
-```
+
 
  <p align="center">
 **[END OF LAB]**
 </p>
 </br></br></br>
+
+**Lab 3 - Running the example**
+
+**Purpose: In this lab, we’ll see how to complete the code generation and run the example.**
+
+1. Now that we have our plan in place, we can go ahead and have Workspace create the initial version of the files. At the bottom of the *Task/Plan* area is a button to *Implement selected files*. In the *Plan* area, make sure that all files are checked (check in the box). Then click on the *Implement selected files* button to have Copilot generate the selected files.
+
+![Generate files](./images/ws17.png?raw=true "Generate files")
+
+2. After the code generation completes, the *Files changed* section will show the proposed implementations. Scroll through and review the proposed changes. You also have an option to add additional features to a file by using the *+ Add item entry* in the file's section on the Plan.
+
+
+![Proposed code](./images/ws18.png?raw=true "Proposed code")
+
+3. Back on the left side, in the *Plan* area, there may be a section at the bottom titled *Commands* that contains any terminal commands that need to be executed. If so, click on the *play* button next to the the command(s) to automatically open a terminal and execute the command. After running it will be checked off as completed in the task list.
+
+
+![Running commands](./images/ws19.png?raw=true "Running commands")
+
+4. In the top row of controls is a section of icons for starting other dev interfaces, including ones to open a dialog for commands and a terminal, one to open a GitHub Codespace, and one to open the code in VS Code. Click on the one to open *commands/terminal*.
+
+![Dev interfaces](./images/ws20.png?raw=true "Dev interfaces")
+
+
+5. Workspace presents us with a screen where we can enter standard commands to build, test, and run our code.  You can input a command directly in the appropriate field or click on the light bulb icon at the end to have Copilot suggest a command. Since this is a flask app, we can just add the command flask run for the Run entry.
+
+
+![Run command](./images/ws21.png?raw=true "Run command")
+
+6. After a few moments, Workspace starts the app in a temporary web server. In the gray bar for Run, at the far right, are two icons. The one that looks like a red square stops the process. The one that looks like a globe with a green dot opens up a temporary web server where the application is running. After clicking on that, we can view the running application and start playing the game.
+
+![Playing the game](./images/ws22.png?raw=true "Playing the game")
+
+7. When you're done, click on the red stop button.
+
+ <p align="center">
+**[END OF LAB]**
+</p>
+</br></br></br>
+
+**Lab 4 - Making revisions**
+
+**Purpose: In this lab, we’ll see how to make revisions to our codebase.**
+
+1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise*. In the bar, enter the request below to add testing to our code.
+
+```
+Task: 
+- Add unit testing to the app
+
+Dependencies & Components:
+- Jest
+
+Acceptance Criteria:
+- Unit tests pass for all win/draw scenarios
+```
+ 
+![Add testing](./images/ws18.png?raw=true "Add testing")
+
+2. Submit this request and let it run. After processing the prompt, Copilot should update the files and the changes should also be listed as part of the plan in the left side. Go ahead and click the *Generate code* button again for the updated plan.
+
+![Testing added](./images/ws19.png?raw=true "Testing added")
+
+3. Now, let's ask Copilot how to run these tests. In the bar, switch the mode to *Ask*. Enter the query below and submit it.
+
+```
+How to I run the tests for this app?
+```
+
+4. Copilot should respond with some text about how to run the set of tests it added. Copy the commands.
+
+
+![Testing added](./images/ws20.png?raw=true "Testing added")
+
+5. Now, let's open up the terminal and try out the testing commands. Click on the *Commands/Terminal* control again and select the *Terminal* tab.
+
+![Getting to terminal](./images/ws21.png?raw=true "Getting to terminal")
+
+6. In the terminal, paste the commands from step 4 above and execute them.
+
+![Running testing commands](./images/ws22.png?raw=true "Running testing commands")
+
+7. The commands may execute correctly or not. If they don't run correctly, you can come back later and debug. For now, we'll go ahead and add this code into a new GitHub repository like we did in lab 1.
+
+8. In the upper right of the main Workspace screen, click on the *Create repository* screen.
+
+![Create repo](./images/ws5.png?raw=true "Create repo")
+
+9. Clicking on this button opens a dialog with a suggested name for the repo and a place for a description. The dialog includes a button to click to automatically generate the initial commit message. Click on that.
+
+![Generate commit info](./images/ws6.png?raw=true "Generate commit info")
+
+10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*.
+   
+![Opening in GitHub](./images/ws7.png?raw=true "Opening in GitHub")
+
+
+
+ <p align="center">
+**[END OF LAB]**
+</p>
+</br></br></br>
+
+**Lab 5 - Making changes in an existing repository**
+
+**Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository.**
+
+1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise*. In the bar, enter the request below to add testing to our code.
+
 
 // function to parse data
 ```
