@@ -8,11 +8,10 @@
 
 **NOTES:**
 1. We will be working in the public GitHub.com as our backing repository, not a private instance.
-2. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
-6. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
+2. You **must** be on a paid plan to use Workspace.
+3. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
 </br></br></br>
    
-**NOTE: You must be on one of the paid plans to have access to Workspace.**
 
 **Lab 1 - A quick run-through of using Workspace**
 
