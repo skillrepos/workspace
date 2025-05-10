@@ -274,7 +274,41 @@ Add option to play against the computer
 The game should have the ability for the user to play against the computer. The player and the computer should take turns filling in their squares. The ability to play against the computer should be an option the main web page.
 ```
 
-5. 
+
+![Filling in issue fields](./images/ws25.png?raw=true "Filling in issue fields")
+
+5. To get to Workspace from within an existing repository, first click on the green <> Code button in the repository. There, you'll have a Copilot tab (in addition to the Local and Codespaces tabs). Clicking on the Copilot tab gives you a dialog box to describe a task. We'll simply tell Copilot to address the issue we just opened. For example, you can just enter the text below in the *Copilot* tab.
+
+```
+Address issue #1
+```
+
+![Filling in Copilot field](./images/ws26.png?raw=true "Filling in Copilot field")
+
+6. Click on *Start task*. This should open up a new Workspace based on this repository. The Workspace is populated with Current behavior, and Proposed solution sections based on the content of the repository and the issue (#workspace-for-issue). The Current behavior section details what the repository has, and does not have, relative to the requested task. Scroll through the contents of the *Current behavior* area and look at the current assessment.
+
+
+![Current behavior](./images/ws27.png?raw=true "Current behavior")
+  
+  
+7. The Proposed solution section details what Copilot plans to change/add to the current code to accomplish the task. Scroll through and take a look at the contents of that section.
+
+
+![Proposed solution](./images/ws28.png?raw=true "Proposed solution")
+
+8. From here, we just follow the usual workflow by generating the plan, reviewing it, and when ready, generating the code. After reviewing the proposed changes, go ahead and click on the button to generate the updated plan*.
+
+![Updated plan](./images/ws29.png?raw=true "Updated plan")
+
+9. Now, review the plan and generate the code.
+
+
+![Generate updated code](./images/ws30.png?raw=true "Generate updated code")
+
+10. From here, we can open and run it just as we did in the last lab to try it out.
+   
+
+11. 
 // function to parse data
 ```
 4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line. (Note that you should give Copilot a second to provide code suggestions before moving on to the next line.)
