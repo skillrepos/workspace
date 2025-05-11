@@ -167,7 +167,7 @@ Acceptance Criteria:
 ![Dev interfaces](./images/ws20.png?raw=true "Dev interfaces")
 
 
-5. Workspace presents us with a screen where we can enter standard commands to build, test, and run our code.  You can input a command directly in the appropriate field or click on the light bulb icon at the end to have Copilot suggest a command. Since this is a flask app, we can just add the command flask run for the Run entry.
+5. Workspace presents us with a screen where we can enter standard commands to build, test, and run our code.  You can input a command directly in the appropriate field or click on the light bulb icon at the end to have Copilot suggest a command. For example, if our app was a flask app, we could just add the command *flask run* for the Run entry.
 
 
 ![Run command](./images/ws21.png?raw=true "Run command")
@@ -250,7 +250,11 @@ How to I run the tests for this app?
 
 **Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository**
 
-1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to Settings and then scroll down until you find the Issues checkbox and make sure it's checked.
+1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to the *Settings* tab for the repository and then scroll down until you find the Issues checkbox and make sure it's checked. (The URL is https://github.com/<userid>/<repository>/settings )
+
+
+
+2. 
 
 ![Activating issues](./images/ws23.png?raw=true "Activating issues")
 
