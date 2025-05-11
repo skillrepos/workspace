@@ -252,16 +252,12 @@ How to I run the tests for this app?
 
 1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to the *Settings* tab for the repository and then scroll down until you find the Issues checkbox and make sure it's checked. (The URL is https://github.com/<userid>/<repository>/settings )
 
-
-
-2. 
-
 ![Activating issues](./images/ws23.png?raw=true "Activating issues")
 
 
 2. Now, let's create a new issue for the feature request. Click on *Issues* at the top and then click on the button to create a new issue.
 
-![Creating new issue](./images/ws24.png?raw=true "Activating issues")
+![Creating new issue](./images/ws24.png?raw=true "Creatinge new issue")
 
 3. For the issue title, you can fill in something like the text below:
 
