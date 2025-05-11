@@ -1,6 +1,6 @@
 # Working with GitHub Copilot Workspace
 ## From concept to code using Gen AI
-## Revision 1.0 - 05/10/25
+## Revision 1.1 - 05/11/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -73,9 +73,9 @@ open index.html
 </br></br></br>
 
 
-**Lab 2 - A more refined game**
+**Lab 2 - Utilizing Workspace Features**
 
-**Purpose: In this lab, we’ll create a more defined instance of our game by working through the formal process**
+**Purpose: In this lab, we’ll start using Workspace's formal process to create a more defined app**
 
 1. Let's start by adding a very specific definition to Workspace of what we want. We wouldn't have to be this specific at all, but this will help ensure we get more accuracy and consistency in the result. In the task area, copy and paste the following requirement.
 
@@ -146,7 +146,7 @@ Acceptance Criteria:
 </p>
 </br></br></br>
 
-**Lab 3 - Running the example**
+**Lab 3 - Implementation to Execution**
 
 **Purpose: In this lab, we’ll see how to complete the code generation and run the example.**
 
@@ -185,9 +185,9 @@ Acceptance Criteria:
 </p>
 </br></br></br>
 
-**Lab 4 - Making revisions**
+**Lab 4 - Making revisions in Workspace**
 
-**Purpose: In this lab, we’ll see how to make revisions to our codebase.**
+**Purpose: In this lab, we’ll see how to use Workspace to make revisions to our codebase**
 
 1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise*. In the bar, enter the request below to add testing to our code.
 
@@ -248,9 +248,9 @@ How to I run the tests for this app?
 </p>
 </br></br></br>
 
-**Lab 5 - Making changes in an existing repository**
+**Lab 5 - Leveraging Workspace in an existing repository**
 
-**Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository.**
+**Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository**
 
 1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to Settings and then scroll down until you find the Issues checkbox and make sure it's checked.
 
