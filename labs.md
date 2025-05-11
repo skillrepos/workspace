@@ -37,8 +37,6 @@
 create a tic-tac-toe game
 ```
 
-![Add new goal](./images/ws4.png?raw=true "Add new goal")
-
 6. Now, let's cut straight to the implementation. Click on the green *Generate plan* button below the dialog area and then select the *Generate Code* button.
 
 ![Generate code](./images/ws4.png?raw=true "Generate code")
