@@ -92,7 +92,12 @@ open index.html
 
 **Purpose: In this lab, we’ll start using Workspace's formal process to create a more defined app**
 
-1. Let's start by adding a very specific definition to Workspace of what we want. We wouldn't have to be this specific at all, but this will help ensure we get more accuracy and consistency in the result. In the task area, copy and paste the following requirement.
+1. Start back at the main [Workspace home page](https://copilot-workspace.githubnext.com). You should see your session from Lab 1 listed in the *Recent sessions* area. Click again on *Create new repository* to start a new session.
+
+![Starting a new session](./images/ws36.png?raw=true "Starting a new session")
+</br></br>
+
+2. Let's start this session by adding a very specific definition to Workspace of what we want. We wouldn't have to be this specific at all, but this will help ensure we get more accuracy and consistency in the result. In the task area, copy and paste the following requirement.
 
 ```
 Add Tic-Tac-Toe Game
@@ -131,30 +136,39 @@ Acceptance Criteria:
 
 ![Brainstorm](./images/ws10.png?raw=true "Brainstorm")
 
-3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed and decide if you want to add any of them as additional tasks to the overall plan that Copilot has constructed. To add them, click the corresponding *+ Add to task* button.
+3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas can range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed. In this case, since we told Workspace it could use either React or vanilla html, we should have an *Idea* for each of those. Scroll to the one for *Using Vanilla HTML/CSS/JS* and click the corresponding *+ Add to task* button to add it to the plan.
 
-![Brainstorm list](./images/ws11.png?raw=true "Brainstorm list")
+![Brainstorm list](./images/ws55.png?raw=true "Brainstorm list")
 
-4. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
+4. After adding to the task list, you will see a checkmark indicator in the upper right indicating *Added to task*. You will also see the *Ideas from brainstorming* listed in the *Repository* section on the left.
 
-![Suggested questions](./images/ws12.png?raw=true "Suggested questions")
+![Updated list](./images/ws56.png?raw=true "Updated list")
 
-5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*.
+5. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
 
-![Adding items from question](./images/ws13.png?raw=true "Adding items from question")
+![Suggested questions](./images/ws57.png?raw=true "Suggested questions")
+
+5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*. Ones having the visual interactions are usually fairly innocuous. If you select an item, it will show up as *Added to task* and in the *Ideas from brainstorming* again.
+
+![Adding items from question](./images/ws59.png?raw=true "Adding items from question")
 
 6. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
 
 ![Generating the plan](./images/ws14.png?raw=true "Generating the plan")
 
-7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Task* area. This section lists out all the files it expects to create along with the main logic that will be implemented in each.
+7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc. And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
 
-![Plan section](./images/ws15.png?raw=true "Plan section")
+![Plan section](./images/ws42.png?raw=true "Plan section")
 
-8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names. 
+8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names.
 
-![Planned files](./images/ws16.png?raw=true "Planned files")
+9. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Choose the *styles.css* file (assuming it exists in the list) and click on the new tab on the right for *styles.css*. 
 
+![Planned files](./images/ws43.png?raw=true "Planned files")
+
+10. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Add a style for a dark theme". You can close the dedicated tab for *styles.css* when done.
+
+![Adding dark theme](./images/ws44.png?raw=true "Adding dark theme")
 
  <p align="center">
 **[END OF LAB]**
@@ -165,21 +179,23 @@ Acceptance Criteria:
 
 **Purpose: In this lab, we’ll see how to complete the code generation and run the example.**
 
-1. Now that we have our plan in place, we can go ahead and have Workspace create the initial version of the files. At the bottom of the *Task/Plan* area is a button to *Implement selected files*. In the *Plan* area, make sure that all files are checked (check in the box). Then click on the *Implement selected files* button to have Copilot generate the selected files.
+1. Now that we have our plan in place, we can go ahead and have Workspace create the initial version of the files. At the bottom of the *Task/Plan* area (click back on *Task* if needed) is a button to *Implement selected files*. In the *Plan* area, make sure that all files are checked (check in the box). Then click on the *Implement selected files* button to have Copilot generate the selected files.
 
-![Generate files](./images/ws17.png?raw=true "Generate files")
+![Generate files](./images/ws45.png?raw=true "Generate files")
 
 2. After the code generation completes, the *Files changed* section will show the proposed implementations. Scroll through and review the proposed changes. You also have an option to add additional features to a file by using the *+ Add item entry* in the file's section on the Plan.
 
 
-![Proposed code](./images/ws18.png?raw=true "Proposed code")
+![Proposed code](./images/ws47.png?raw=true "Proposed code")
 
-3. Back on the left side, in the *Plan* area, there may be a section at the bottom titled *Commands* that contains any terminal commands that need to be executed. If so, click on the *play* button next to the the command(s) to automatically open a terminal and execute the command. After running it will be checked off as completed in the task list.
+3. Back on the left side, in the *Task/Plan* area, there may be a section at the bottom titled *Commands* that contains any terminal commands that need to be executed. If so, click on the *play* button next to the the command(s) to automatically open a terminal and execute the command. After running it will be checked off as completed in the task list.
 
 
-![Running commands](./images/ws19.png?raw=true "Running commands")
+![Running commands](./images/ws48.png?raw=true "Running commands")
+</br></br>
+![Run completed](./images/ws49.png?raw=true "Run completed")
 
-4. In the top row of controls is a section of icons for starting other dev interfaces, including ones to open a dialog for commands and a terminal, one to open a GitHub Codespace, and one to open the code in VS Code. Click on the one to open *commands/terminal*.
+4. In the top row of controls is a section of icons for starting other dev interfaces, including ones to open a dialog for commands and a terminal, one to open a GitHub Codespace, and one to open the code in VS Code. From running the commands in the plan, we'll already have a *Commands* tab open. Let's configure individual commands for Build, etc. Click on the downward arrow next to *Build* and then click on *Configure commands* at the bottom.
 
 ![Dev interfaces](./images/ws20.png?raw=true "Dev interfaces")
 
@@ -332,4 +348,3 @@ Address issue #1
 **[END OF LAB]**
 </p>
 </br></br></br>
-
