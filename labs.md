@@ -18,32 +18,38 @@
 **Purpose: In this lab, we’ll start to learn about Copilot Workspace and how it generates code based on the prompts we provide**
 
 1. Open a browser session and go to this link [New Workspace Session](https://copilot-workspace.githubnext.com)
-
+</br></br>
 2. If you're not already signed in, you'll need to sign in with your GitHub userid and password.
 
 ![Sign-in needed](./images/ws1.png?raw=true "Sign-in needed")
-
+</br></br>
 3. You'll then need to authorize your GitHub account.
 
 ![Authorize](./images/ws2.png?raw=true "Authorize")
+</br></br>
 
 4. We're going to create a project from scratch, so click on the *Create new repository* link.
 
 ![Create new repository start](./images/ws3.png?raw=true "Create new repository start")
+</br></br>
 
 5. Let's give Workspace a goal to create a simple tic-tac-toe game. In the task area, enter the command below.
 
 ```
 create a tic-tac-toe game
 ```
+</br></br>
 
 6. Now, let's cut straight to the implementation. Click on the *Generate plan* button below the dialog area and then select the *Generate Code* option.
 
 ![Generate code](./images/ws29.png?raw=true "Generate code")
+</br></br>
 
 7. This will run for a while to generate all the code for your project.
+</br></br>
 
 8. After this is done, we'll create a repository to put our code in. In the upper right of the main Workspace screen, click on the *Create repository* screen.
+</br></br>
 
 ![Create repo](./images/ws30.png?raw=true "Create repo")
 
@@ -52,19 +58,19 @@ create a tic-tac-toe game
 ![Generate description](./images/ws31.png?raw=true "Generate description")
 </br></br>
 ![With description](./images/ws32.png?raw=true "With description")
+</br></br>
 
 10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*. Afterwards, you should see something like below. (Depending on what Workspae created, you may or may not a README.md file that is filled in.)
    
-![Opening in GitHub](./images/ws7.png?raw=true "Opening in GitHub")
-</br></br>
 ![New repository](./images/ws35.png?raw=true "New repository")
+</br></br>
 
 11. Before continuing, we need to make one more change to the new repo. It will initially be *Private*. To avoid any issues for the next step, let's make it *Public*. Click on the *Settings* tab at the top of the repo. Then scroll down on that page to the *Danger Zone* area. Click the button to *Change visibility* and follow the prompt to make the new repo *Public*.
 
 ![Repo settings](./images/ws33.png?raw=true "Repo settings")
 </br></br>
 ![Changing visibility](./images/ws34.png?raw=true "Changing visibility")
-
+</br></br>
    
 12. From here, you can clone your repository down locally and then run it - usually by opening up/starting/browsing to the *index.html* file.
 
