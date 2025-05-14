@@ -1,6 +1,6 @@
 # Working with GitHub Copilot Workspace
 ## From concept to code using Gen AI
-## Revision 1.1 - 05/11/25
+## Revision 1.2 - 05/14/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -37,25 +37,36 @@
 create a tic-tac-toe game
 ```
 
-6. Now, let's cut straight to the implementation. Click on the green *Generate plan* button below the dialog area and then select the *Generate Code* button.
+6. Now, let's cut straight to the implementation. Click on the *Generate plan* button below the dialog area and then select the *Generate Code* option.
 
-![Generate code](./images/ws4.png?raw=true "Generate code")
+![Generate code](./images/ws29.png?raw=true "Generate code")
 
 7. This will run for a while to generate all the code for your project.
 
 8. After this is done, we'll create a repository to put our code in. In the upper right of the main Workspace screen, click on the *Create repository* screen.
 
-![Create repo](./images/ws5.png?raw=true "Create repo")
+![Create repo](./images/ws30.png?raw=true "Create repo")
 
-9. Clicking on this button opens a dialog with a suggested name for the repo and a place for a description. The dialog includes a button to click to automatically generate the initial commit message. Click on that.
+9. Clicking on this button opens a dialog with a suggested name for the repo and a place for a description. The dialog includes a button to click to automatically generate the description/commit message. Click on that. Afterwards, you will see a description for the changes (formatted as markdown).
 
-![Generate commit info](./images/ws6.png?raw=true "Generate commit info")
+![Generate description](./images/ws31.png?raw=true "Generate description")
+</br></br>
+![With description](./images/ws32.png?raw=true "With description")
 
-10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*.
+10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*. Afterwards, you should see something like below. (Depending on what Workspae created, you may or may not a README.md file that is filled in.)
    
 ![Opening in GitHub](./images/ws7.png?raw=true "Opening in GitHub")
+</br></br>
+![New repository](./images/ws35.png?raw=true "New repository")
 
-11. From here, you can clone your repository down locally and then run it - usually by opening up the index.html file.
+11. Before continuing, we need to make one more change to the new repo. It will initially be *Private*. To avoid any issues for the next step, let's make it *Public*. Click on the *Settings* tab at the top of the repo. Then scroll down on that page to the *Danger Zone* area. Click the button to *Change visibility* and follow the prompt to make the new repo *Public*.
+
+![Repo settings](./images/ws33.png?raw=true "Repo settings")
+</br></br>
+![Changing visibility](./images/ws34.png?raw=true "Changing visibility")
+
+   
+12. From here, you can clone your repository down locally and then run it - usually by opening up/starting/browsing to the *index.html* file.
 
 ```
 git clone <path to repo>
