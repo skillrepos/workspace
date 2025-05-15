@@ -100,8 +100,6 @@ open index.html
 2. Let's start this session by adding a very specific definition to Workspace of what we want. We wouldn't have to be this specific at all, but this will help ensure we get more accuracy and consistency in the result. In the task area, copy and paste the following requirement.
 
 ```
-Add Tic-Tac-Toe Game
-
 Task:
   • Implement a browser-based Tic-Tac-Toe game playable by two users  
   • Render a 3×3 grid of clickable cells  
@@ -110,17 +108,8 @@ Task:
   • Provide a “Restart” button to reset the board  
 
 Dependencies & Components:
-  • UI framework: React (v18+) **or** vanilla HTML/CSS/JS  
-  • Files:  
-      – `index.html` (root container)  
-      – `styles.css` (grid layout & styling)  
-      – `App.jsx` or `app.js` (game logic & rendering)  
-      – `GameBoard.jsx` / `GameBoard.js` (grid component)  
-      – `Square.jsx` / `Square.js` (cell component)  
-  • Core functions:  
-      – `handleClick(cellIndex)` to place mark  
-      – `calculateWinner(cells: string[9]) → string|null`  
-      – `resetGame()` to clear board state  
+  • UI framework: Flask
+  • Programming Language: Python
 
 Acceptance Criteria:
   • A 3×3 board appears on page load  
@@ -154,21 +143,21 @@ Acceptance Criteria:
 
 6. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
 
-![Generating the plan](./images/ws14.png?raw=true "Generating the plan")
+![Generating the plan](./images/ws60.png?raw=true "Generating the plan")
 
 7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc. And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
 
-![Plan section](./images/ws42.png?raw=true "Plan section")
+![Plan section](./images/ws61.png?raw=true "Plan section")
 
 8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names.
 
 9. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Choose the *styles.css* file (assuming it exists in the list) and click on the new tab on the right for *styles.css*. 
 
-![Planned files](./images/ws43.png?raw=true "Planned files")
+![Planned files](./images/ws63.png?raw=true "Planned files")
 
-10. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Add a style for a dark theme". You can close the dedicated tab for *styles.css* when done.
+10. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Style the background with a dark theme". You can close the dedicated tab for *styles.css* when done.
 
-![Adding dark theme](./images/ws44.png?raw=true "Adding dark theme")
+![Adding dark theme](./images/ws62.png?raw=true "Adding dark theme")
 
  <p align="center">
 **[END OF LAB]**
