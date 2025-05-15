@@ -1,6 +1,6 @@
 # Working with GitHub Copilot Workspace
 ## From concept to code using Gen AI
-## Revision 1.3 - 05/15/25
+## Revision 1.4 - 05/15/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -302,9 +302,9 @@ Add unit testing to the app
 5. From here, you can type in "install pytest" in the text area and submit it. After a moment, Workspace should suggest the appropriate command *pip install pytest* in a secondary popup.  They'll be an option to *Run* that command. Just click on that button.(Note: If nothing seems to happen when you click on the *Run* command, it's possible your terminal may have become disconnected. To get it back, *Reload* the page in your browser. Then try the sequence in this step again.)
 
 ![Suggest command](./images/ws102.png?raw=true "Suggest command")
-</br>
+</br></br>
 ![Run command](./images/ws103.png?raw=true "Run command")
-</br>
+</br></br>
 ![Run output](./images/ws104.png?raw=true "Run output")
 </br></br>
 
@@ -315,7 +315,7 @@ How to I run the tests for this app?
 ```
 
 ![Switch to Ask mode](./images/ws105.png?raw=true "Switch to Ask mode")
-</br>
+</br></br>
 ![Testing guidance](./images/ws106.png?raw=true "Testing guidance")
 </br></br>
 
@@ -340,9 +340,9 @@ pytest
 
 10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*.
    
-![Open in GitHub](./images/ws109.png?raw=true "Open in GitHub")
-</br>
-![Opening in GitHub](./images/ws110.png?raw=true "Opening in GitHub")
+![Open in GitHub](./images/ws110.png?raw=true "Open in GitHub")
+</br></br>
+![Opening in GitHub](./images/ws109.png?raw=true "Opening in GitHub")
 
 
 
@@ -355,9 +355,9 @@ pytest
 
 **Purpose: In this lab, we’ll see how to make revisions with Workspace in an existing repository**
 
-1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to the *Settings* tab for the repository and then scroll down until you find the Issues checkbox and make sure it's checked. (The URL is https://github.com/<userid>/<repository>/settings )
+1. While we have a version of our app that we can work with, we might like to add some additional features. For example, let's add a feature to play against the computer. Since we have an existing repository, we can initiate the Workspace process from there. For formal tracking, let's first open a GitHub issue for the feature. You'll need to make sure the Issues functionality is turned on for your repository. Go to the *Settings* tab for the repository and then scroll down until you find the Issues checkbox and make sure it's checked. (The URL is https://github.com/_userid_/_repository_/settings )
 
-![Activating issues](./images/ws23.png?raw=true "Activating issues")
+![Activating issues](./images/ws111.png?raw=true "Activating issues")
 
 
 2. Now, let's create a new issue for the feature request. Click on *Issues* at the top and then click on the button to create a new issue.
@@ -376,45 +376,74 @@ Add option to play against the computer
 The game should have the ability for the user to play against the computer. The player and the computer should take turns filling in their squares. The ability to play against the computer should be an option the main web page.
 ```
 
-
 ![Filling in issue fields](./images/ws25.png?raw=true "Filling in issue fields")
 
-5. To get to Workspace from within an existing repository, first click on the green <> Code button in the repository. There, you'll have a Copilot tab (in addition to the Local and Codespaces tabs). Clicking on the Copilot tab gives you a dialog box to describe a task. We'll simply tell Copilot to address the issue we just opened. For example, you can just enter the text below in the *Copilot* tab.
+5. When you're done, scroll down and click on the *Create* button to create the issue.
+
+![Creating the issue](./images/ws112.png?raw=true "Creating the issue")
+
+6. Now, we'll shift to working in Workspace. To get to Workspace from within an existing repository, first go back to the "<> Code" tab at the top of the repo. On that page, click on the green <> Code button above the list of files on the right. There, you'll have a Copilot tab (in addition to the Local and Codespaces tabs). Clicking on the Copilot tab gives you a dialog box to describe a task. We'll simply tell Copilot to address the issue we just opened. For example, you can just enter the text below in the *Copilot* tab.
 
 ```
 Address issue #1
 ```
 
-![Filling in Copilot field](./images/ws26.png?raw=true "Filling in Copilot field")
+![Filling in Copilot field](./images/ws113.png?raw=true "Filling in Copilot field")
 
-6. Click on *Start task*. This should open up a new Workspace based on this repository. The Workspace is populated with Current behavior, and Proposed solution sections based on the content of the repository and the issue (#workspace-for-issue). The Current behavior section details what the repository has, and does not have, relative to the requested task. Scroll through the contents of the *Current behavior* area and look at the current assessment.
+7. Click on *Start task*. This should open up a new Workspace based on this repository. The Workspace is populated with Current behavior, and Proposed solution sections based on the content of the repository and the issue (#workspace-for-issue). The Current behavior section details what the repository has, and does not have, relative to the requested task. Scroll through the contents of the *Current behavior* area and look at the current assessment. The Proposed solution section details what Copilot plans to change/add to the current code to accomplish the task. Scroll through and take a look at the contents of both sections.
+
+![Current and proposed](./images/ws114.png?raw=true "Current and proposed")
+
+8. You also have a set of *Suggested questions* at the bottom of the right side. You can choose from these as before to see additional options you can add to your app. If you find one that you like, you can click on the *+ Add to task* button. In the example shown in the figure, we've chosen to have *Adjustable difficulty levels* added from one of the suggested questions.
+
+![Item added from question](./images/ws116.png?raw=true "Item added from question")
+
+9. Back on the left side, at the bottom of the *Task* area, you may notice there's a section called *Additional context* that references a URL. If you expand that, you'll see that Workspace is using the URL of the issue we opened as context.
+
+![Additional context from issue URL](./images/ws117.png?raw=true "Additional context from issue URL")
+
+10. Now, click on the green button for *Generate plan* to generate the plan to handle the issue.
+
+11. You can scan through the listed items in the plan and then proceed by clicking on the *Implement selected files* entry at the bottom of the plan.
+
+12. After the generation completes, you can review the proposed changes on the right side.
+
+![Reviewing proposed changes](./images/ws118.png?raw=true "Reviewing proposed changes")
+
+13. From here, we can open up the commands dialog so we can run our app. In the top row, click on the *Commands* icon (the one that looks like a terminal). After clicking this, it will take a moment for Workspace to connect to a terminal.
+
+![Opening commands](./images/ws119.png?raw=true "Opening commands")
+
+14. You may already have the command populated in the *Run* field. If so, you can use that one. If not, you can just enter the command below or click on the light bulb.
+
+```
+pip install -r requirements.txt && python app.py
+```
+
+![Run command](./images/ws120.png?raw=true "Run command")
 
 
-![Current behavior](./images/ws27.png?raw=true "Current behavior")
-  
-  
-7. The Proposed solution section details what Copilot plans to change/add to the current code to accomplish the task. Scroll through and take a look at the contents of that section.
+15. Execute the *Run* command by clicking on the play button at the end of the line. (Alternatively, you could switch to the terminal and run the command there.)  Once the command starts, click on the globe icon to open the live preview as before. 
 
+![Run command](./images/ws121.png?raw=true "Run command")
+    
+16. At this point, you should see your updated game. (Hopefully this works as expected, but even if not, just proceed with the following steps for now.)
 
-![Proposed solution](./images/ws28.png?raw=true "Proposed solution")
+![Run command](./images/ws122.png?raw=true "Run command")
 
-8. From here, we just follow the usual workflow by generating the plan, reviewing it, and when ready, generating the code. After reviewing the proposed changes, go ahead and click on the button to generate the updated plan*.
+17. With our changes made in the code and tested, we're ready to create a pull request for our repository to fix the issue. Click the *Create pull request* button in the upper right. (Note there are various other related options available via the drop-down if needed.), 
 
-![Updated plan](./images/ws29.png?raw=true "Updated plan")
+![Create pull request](./images/ws123.png?raw=true "Create pull request")
 
-9. Now, review the plan and generate the code.
+18. You can use the suggested branc name for the pull request and click the option to generate a description. You may have a box available to check that this pull request fixes issue #1. If so, check that. If not, add "Fixes #1" at the start of the description. Then click on the *Create pull request* button.
 
+![Create pull request](./images/ws124.png?raw=true "Create pull request")
 
-![Generate updated code](./images/ws30.png?raw=true "Generate updated code")
+19. In the dialog box that pops up, click on the *Open in GitHub* button or manually go to the repo in GitHub. 
 
-10. From here, we can open and run it just as we did in the last lab to try it out.
+![Open in GitHub](./images/ws125.png?raw=true "Open in GitHub")
 
-![Run new code](./images/ws31.png?raw=true "Run new code")
-
-11. With our changes made in the code and tested, we're ready to create a pull request for our repository to fix the issue. Click the *Create pull request* button in the upper right, and follow the same process as before. Also check the box that indicates this pull request fixes the corresponding issue.  And, select the option to automatically generate a description of the changes.
-
-![Run new code](./images/ws32.png?raw=true "Run new code")
-
+20. Now, in GitHub, you can merge the pull request. For completeness, you can add "Fixes #1" in the Extended Description here too. Afterwards your changes are merged and the issue should be closed.
 
  <p align="center">
 **[END OF LAB]**
