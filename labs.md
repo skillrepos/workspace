@@ -124,39 +124,59 @@ Acceptance Criteria:
 
 ![Detailed requirements](./images/ws9.png?raw=true "Detailed requirements")
 
-2. Now, click the green *Brainstorm* button at the bottom to go to the initial *brainstorming/planning* page.
+</br></br>
 
-3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas can range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed. 
+3. Now, click the green *Brainstorm* button at the bottom to go to the initial *brainstorming/planning* page.
+
+</br></br>
+
+4. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas can range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed. 
 
 ![Brainstorm list](./images/ws77.png?raw=true "Brainstorm list")
 
-4. Click on the *+ Add to task* button for the ones for *Basic Implementation* and *Enhanced user experience* (or ones close to that - the titles may vary). After adding those to the task list, you will see a checkmark indicator in the upper right indicating *Added to task*. You will also see the *Ideas from brainstorming* listed in the *Repository* section on the left.
+</br></br>
+
+5. Click on the *+ Add to task* button for the ones for *Basic Implementation* and *Enhanced user experience* (or ones close to that - the titles may vary). After adding those to the task list, you will see a checkmark indicator in the upper right indicating *Added to task*. You will also see the *Ideas from brainstorming* listed in the *Repository* section on the left.
 
 ![Updated list](./images/ws78.png?raw=true "Updated list")
 
-5. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
+</br></br>
+
+6. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
 
 ![Suggested questions](./images/ws79.png?raw=true "Suggested questions")
 
-5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*. Ones regarding visual interactions/design around improving the user experience are usually fairly straightforward. Be careful of items that may really raise the complexity. If you select an item, it will show up as *Added to task* and in the *Ideas from brainstorming* again.
+</br></br>
+
+7. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*. Ones regarding visual interactions/design around improving the user experience are usually fairly straightforward. Be careful of items that may really raise the complexity. If you select an item, it will show up as *Added to task* and in the *Ideas from brainstorming* again.
 
 ![Adding items from question](./images/ws80.png?raw=true "Adding items from question")
 
-6. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
+</br></br>
+
+8. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
 
 ![Generating the plan](./images/ws81.png?raw=true "Generating the plan")
 
-7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc.(You may or may not have those.) And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
+</br></br>
+
+9. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc.(You may or may not have those.) And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
 
 ![Plan section](./images/ws82.png?raw=true "Plan section")
 
-8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names.
+</br></br>
 
-9. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Expand the directories for *static/css* and click on the *styles.css* file (assuming it exists in the list). Then click on the new tab on the right for *styles.css*. Notice that the bar at the bottom will also have changed to indicate we are revising the css file.
+10. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names.
+
+</br></br>
+
+11. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Expand the directories for *static/css* and click on the *styles.css* file (assuming it exists in the list). Then click on the new tab on the right for *styles.css*. Notice that the bar at the bottom will also have changed to indicate we are revising the css file.
 
 ![Planned files](./images/ws83.png?raw=true "Planned files")
 
-10. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Style the background with a dark theme". You can close the dedicated tab for *styles.css* when done.
+</br></br>
+
+12. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Style the background with a dark theme". You can close the dedicated tab for *styles.css* when done.
 
 ![Adding dark theme](./images/ws84.png?raw=true "Adding dark theme")
 
@@ -169,37 +189,79 @@ Acceptance Criteria:
 
 **Purpose: In this lab, we’ll see how to complete the code generation and run the example.**
 
-1. Now that we have our plan in place, we can go ahead and have Workspace create the initial version of the files. At the bottom of the *Task/Plan* area (click back on *Task* if needed) is a button to *Implement selected files*. In the *Plan* area, make sure that all files are checked (check in the box). Then click on the *Implement selected files* button to have Copilot generate the selected files.
+1. Before we go further, if you don't have a section at the bottom of the plan to install Flask and create a *requirements.txt* file, let's set that up. (If you already have that, you can skip to step 4.) First, in the text area at the bottom, click on the icon to the left (probably a ? in a circle) and select the *Revise* mode.
 
-![Generate files](./images/ws45.png?raw=true "Generate files")
+![Change mode](./images/ws85.png?raw=true "Change mode")
 
-2. After the code generation completes, the *Files changed* section will show the proposed implementations. Scroll through and review the proposed changes. You also have an option to add additional features to a file by using the *+ Add item entry* in the file's section on the Plan.
-
-
-![Proposed code](./images/ws47.png?raw=true "Proposed code")
-
-3. Back on the left side, in the *Task/Plan* area, there may be a section at the bottom titled *Commands* that contains any terminal commands that need to be executed. If so, click on the *play* button next to the the command(s) to automatically open a terminal and execute the command. After running it will be checked off as completed in the task list.
-
-
-![Running commands](./images/ws48.png?raw=true "Running commands")
 </br></br>
-![Run completed](./images/ws49.png?raw=true "Run completed")
 
-4. In the top row of controls is a section of icons for starting other dev interfaces, including ones to open a dialog for commands and a terminal, one to open a GitHub Codespace, and one to open the code in VS Code. From running the commands in the plan, we'll already have a *Commands* tab open. Let's configure individual commands for Build, etc. Click on the downward arrow next to *Build* and then click on *Configure commands* at the bottom.
+2. With the *Revise* mode selected, enter the prompt into the text area: "Install Flask and create a requirements.txt file" and submit the prompt.
 
-![Dev interfaces](./images/ws20.png?raw=true "Dev interfaces")
+![Prompt to update](./images/ws86.png?raw=true "Prompt to update")
 
+</br></br>
 
-5. Workspace presents us with a screen where we can enter standard commands to build, test, and run our code.  You can input a command directly in the appropriate field or click on the light bulb icon at the end to have Copilot suggest a command. For example, if our app was a flask app, we could just add the command *flask run* for the Run entry.
+3. After a few moments, Workspace should add a new *requirements.txt* file to the list of files to be implemented. Scroll to the bottom off the plan and you should also see a *Commands* section with the terminal commands to install Flask and add it to the *requirements.txt* file.
 
+![Updates to plan](./images/ws87.png?raw=true "Updates to plan")
 
-![Run command](./images/ws21.png?raw=true "Run command")
+</br></br>
 
-6. After a few moments, Workspace starts the app in a temporary web server. In the gray bar for Run, at the far right, are two icons. The one that looks like a red square stops the process. The one that looks like a globe with a green dot opens up a temporary web server where the application is running. After clicking on that, we can view the running application and start playing the game.
+4. Now that we have our plan in place, we can go ahead and have Workspace create the initial version of the files. At the bottom of the *Task/Plan* area (click back on *Task* if needed) is a button to *Implement selected files*. In the *Plan* area, make sure that all files are checked (check in the box). Then click on the *Implement selected files* button to have Copilot generate the selected files.
 
-![Playing the game](./images/ws22.png?raw=true "Playing the game")
+</br></br>
 
-7. When you're done, click on the red stop button.
+5. After the code generation completes, the *Files changed* section will show the proposed implementations. Scroll through and review the proposed changes. You also have an option to add additional features to a file by using the *+ Add item entry* in the file's section on the Plan.
+
+![Proposed code](./images/ws88.png?raw=true "Proposed code")
+
+</br></br>
+
+6. Back on the left side, in the *Task/Plan* area, there should be a section at the bottom titled *Commands* that contains any terminal commands that need to be executed. If so, click on the *play* button next to the the command(s) to automatically open a terminal and execute the command(s). After running it will be checked off as completed in the task list.
+
+![Run completed](./images/ws89.png?raw=true "Run completed")
+
+</br></br>
+
+7. In the top row of controls is a section of icons for starting other dev interfaces (marked in red in figure), including ones to open a dialog for commands and a terminal, one to open a GitHub Codespace, and one to open the code in VS Code. From running the commands in the plan, we'll already have a *Commands* tab open. Let's configure individual commands for Build, etc. Click on the downward arrow next to *Build* and then click on *Configure commands* at the bottom.
+
+![Configure commands](./images/ws90.png?raw=true "Configure commands")
+
+</br></br>
+
+8. Workspace presents us with a screen where we can enter standard commands to build, test, and run our code.  You can input a command directly in the appropriate field or click on the light bulb icon at the end to have Copilot suggest a command. For our content as of now, we just need to be able to *Run* it. So, at the end of the *Run* area, click the light bulb icon. After spinning for a bit, Copilot should suggest something like the command below. If not, you can automatically type that in (or just omit the pip install since we've done that already). Afterwards, click on the *Save* button to save the changes.
+
+```
+pip install -r requirements.txt && python app.py
+```
+
+![Configure Run command](./images/ws91.png?raw=true "Configure Run command")
+
+</br></br>
+
+9. Now, you can click the dropdown next to *Build* again and click on the *Run* command.
+
+![Execute Run command](./images/ws91.png?raw=true "Execute Run command")
+
+</br></br>
+   
+10. After a few moments, Workspace starts the app in a temporary web server. In the gray bar for Run, at the far right, are two icons. The one that looks like a red square stops the process. The one that looks like a globe with a green dot opens up a temporary web server where the application is running. Click on the *globe* icon (or the other one in the top bar) to open the web session.
+
+![Opening the session](./images/ws93.png?raw=true "Opening the sessionws")
+
+**IMPORTANT NOTE: In order to see the application running in the web session, you must be logged into GitHub with the same id that you're logged in to the Workspace application.**
+
+</br></br>
+
+11. Once the game starts, you should see the grid on screen and can click in the squares to play, taking turns between *X's* and *O's*.
+
+![Playing the game](./images/ws94.png?raw=true "Playing the game")   
+
+</br></br>
+
+12. When you're done, go back to the Workspace session and click on the red stop button.
+
+![Stopping the game](./images/ws95.png?raw=true "Stopping the game") 
 
  <p align="center">
 **[END OF LAB]**
