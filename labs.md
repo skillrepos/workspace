@@ -1,6 +1,6 @@
 # Working with GitHub Copilot Workspace
 ## From concept to code using Gen AI
-## Revision 1.2 - 05/14/25
+## Revision 1.3 - 05/15/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -116,48 +116,49 @@ Acceptance Criteria:
   • Clicking an empty cell places “X” then “O” on alternating turns  
   • When three in a row appear (horiz, vert, diag), show “Player X wins!” or “Player O wins!”  
   • If all cells fill without a winner, display “Draw”  
-  • “Restart” button clears the board and resets turn order  
+  • “Restart” button clears the board and resets turn order
+  • All needed environments setup
+  • All needed dependencies and components installed
+ 
 ```
 
 ![Detailed requirements](./images/ws9.png?raw=true "Detailed requirements")
 
-2. Now, click the *Brainstorm* button to go to the initial *brainstorming/planning* page.
+2. Now, click the green *Brainstorm* button at the bottom to go to the initial *brainstorming/planning* page.
 
-![Brainstorm](./images/ws10.png?raw=true "Brainstorm")
+3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas can range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed. 
 
-3. On the right will be a *Brainstorm* section showing different ideas and approaches you can have Workspace implement for you. These ideas can range from basic implementation approaches to suggested options and possible advanced features. You can scroll through the ones that are listed. In this case, since we told Workspace it could use either React or vanilla html, we should have an *Idea* for each of those. Scroll to the one for *Using Vanilla HTML/CSS/JS* and click the corresponding *+ Add to task* button to add it to the plan.
+![Brainstorm list](./images/ws77.png?raw=true "Brainstorm list")
 
-![Brainstorm list](./images/ws55.png?raw=true "Brainstorm list")
+4. Click on the *+ Add to task* button for the ones for *Basic Implementation* and *Enhanced user experience* (or ones close to that - the titles may vary). After adding those to the task list, you will see a checkmark indicator in the upper right indicating *Added to task*. You will also see the *Ideas from brainstorming* listed in the *Repository* section on the left.
 
-4. After adding to the task list, you will see a checkmark indicator in the upper right indicating *Added to task*. You will also see the *Ideas from brainstorming* listed in the *Repository* section on the left.
-
-![Updated list](./images/ws56.png?raw=true "Updated list")
+![Updated list](./images/ws78.png?raw=true "Updated list")
 
 5. At the bottom of the *Ideas* list will be a *Suggested questions* section with some other ideas from Copilot on areas to explore and/or validate. You can scroll down and click on a particular question to see what Copilot would propose for it. This will usually show a series of suggested implementation details relevant to the overall question.
 
-![Suggested questions](./images/ws57.png?raw=true "Suggested questions")
+![Suggested questions](./images/ws79.png?raw=true "Suggested questions")
 
-5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*. Ones having the visual interactions are usually fairly innocuous. If you select an item, it will show up as *Added to task* and in the *Ideas from brainstorming* again.
+5. Pick one if you want and click on the *+ Add to task* button to add it into the *Tasks* area as one of the *Ideas from brainstorming*. Ones regarding visual interactions/design around improving the user experience are usually fairly straightforward. Be careful of items that may really raise the complexity. If you select an item, it will show up as *Added to task* and in the *Ideas from brainstorming* again.
 
-![Adding items from question](./images/ws59.png?raw=true "Adding items from question")
+![Adding items from question](./images/ws80.png?raw=true "Adding items from question")
 
 6. With our set of initial tasks defined, we're ready to proceed to generating the plan. On the left side of the dashboard, click the *Generate plan* button.
 
-![Generating the plan](./images/ws60.png?raw=true "Generating the plan")
+![Generating the plan](./images/ws81.png?raw=true "Generating the plan")
 
-7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc. And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
+7. Copilot will process for a few moments and then add a *Plan* section on the left under the *Repository* area. You can scroll down to see this. This section lists out all the files it expects to create along with the main logic that will be implemented in each. At the bottom, it will also show any commands that need to be run separately to install dependencies, setup environments, etc.(You may or may not have those.) And, on the right will be a list of *Uncommitted changes*. At this point, this is the set of files to be implemented.
 
-![Plan section](./images/ws61.png?raw=true "Plan section")
+![Plan section](./images/ws82.png?raw=true "Plan section")
 
 8. If we were implementing changes against an existing code base, we would see diffs here for existing files. Since we don't yet have any actual files, we just see the list and names.
 
-9. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Choose the *styles.css* file (assuming it exists in the list) and click on the new tab on the right for *styles.css*. 
+9. On the left, next to the *Task* tab, will be a new *Files* tab. Click on that and you'll see the proposed list of files again. Expand the directories for *static/css* and click on the *styles.css* file (assuming it exists in the list). Then click on the new tab on the right for *styles.css*. Notice that the bar at the bottom will also have changed to indicate we are revising the css file.
 
-![Planned files](./images/ws63.png?raw=true "Planned files")
+![Planned files](./images/ws83.png?raw=true "Planned files")
 
 10. Let's add an item for a *dark theme* to it. Click on the *+ Add item* link at the list bottom. Then type in "Style the background with a dark theme". You can close the dedicated tab for *styles.css* when done.
 
-![Adding dark theme](./images/ws62.png?raw=true "Adding dark theme")
+![Adding dark theme](./images/ws84.png?raw=true "Adding dark theme")
 
  <p align="center">
 **[END OF LAB]**
