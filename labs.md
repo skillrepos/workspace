@@ -272,57 +272,77 @@ pip install -r requirements.txt && python app.py
 
 **Purpose: In this lab, we’ll see how to use Workspace to make revisions to our codebase**
 
-1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise*. In the bar, enter the request below to add testing to our code.
+1. While we have a version of our app that we can work with, we should also have some tests. Let's tell Workspace to add tests to our code. In the bar at the bottom, switch the mode to *Revise* again (if not already in that mode). In the bar, enter the request below to add testing to our code.
 
 ```
-Task: 
-- Add unit testing to the app
-
-Dependencies & Components:
-- Jest
-
-Acceptance Criteria:
-- Unit tests pass for all win/draw scenarios
+Add unit testing to the app
 ```
- 
-![Add testing](./images/ws18.png?raw=true "Add testing")
+![Set to revise mode](./images/ws96.png?raw=true "Set to revise mode")
+</br>
+![Add testing](./images/ws97.png?raw=true "Add testing")
+</br></br>
 
-2. Submit this request and let it run. After processing the prompt, Copilot should update the files and the changes should also be listed as part of the plan in the left side. Go ahead and click the *Generate code* button again for the updated plan.
 
-![Testing added](./images/ws19.png?raw=true "Testing added")
+2. Submit this request and let it run. After processing the prompt, Copilot should update the files. Look on the right under the *Files changed* list and scroll through the changes to see what it produced.
 
-3. Now, let's ask Copilot how to run these tests. In the bar, switch the mode to *Ask*. Enter the query below and submit it.
+![Files changed for testing](./images/ws98.png?raw=true "Files changed for testing")
+
+</br></br>
+
+3. the changes should also be listed as part of the *Plan* in the left side, under the *Task* area. Scroll down and look for files with line items with blue dots to the left of the item in the *Plan* list.
+
+![Identifying changed files](./images/ws99.png?raw=true "Identifying changed files")
+
+</br></br>
+
+4. Now, let's run any updated commands. Scroll down to the *Commands* section and you'll likely see a line something like "pip install Flask pytest". Since we already have Flask installed, we just need to install pytest. We can do that through the text area at the bottom. Click to change the mode to *Command*.
+
+![Changing mode](./images/ws101.png?raw=true "Changing mode")
+
+5. From here, you can type in "install pytest" in the text area and submit it. After a moment, Workspace should suggest the appropriate command *pip install pytest* in a secondary popup.  They'll be an option to *Run* that command. Just click on that button.(Note: If nothing seems to happen when you click on the *Run* command, it's possible your terminal may have become disconnected. To get it back, *Reload* the page in your browser. Then try the sequence in this step again.)
+
+![Suggest command](./images/ws102.png?raw=true "Suggest command")
+</br>
+![Run command](./images/ws103.png?raw=true "Run command")
+</br>
+![Run output](./images/ws104.png?raw=true "Run output")
+</br></br>
+
+6. Now, let's ask Copilot how to run these tests. In the bar, **switch the mode to *Ask*.** Enter the query below and submit it. Copilot should respond with some overall guidance about how to run the tests as shown in the figure.
 
 ```
 How to I run the tests for this app?
 ```
 
-4. Copilot should respond with some text about how to run the set of tests it added. Copy the commands.
+![Switch to Ask mode](./images/ws105.png?raw=true "Switch to Ask mode")
+</br>
+![Testing guidance](./images/ws106.png?raw=true "Testing guidance")
+</br></br>
 
+7. Ultimately, the testing boils down to just running "pytest". So, let's just switch to the *terminal* and run the command ourselves. Click on the *Commands* tab and the *Terminal*. Then, just enter "pytest". (**NOTE: It is highly likely that your tests may still have some pieces that need to be tweaked and may not run correctly right now.**)
 
-![Testing added](./images/ws20.png?raw=true "Testing added")
+```
+pytest
+```
 
-5. Now, let's open up the terminal and try out the testing commands. Click on the *Commands/Terminal* control again and select the *Terminal* tab.
+![Create repo](./images/ws107.png?raw=true "Create repo")
+</br></br>
 
-![Getting to terminal](./images/ws21.png?raw=true "Getting to terminal")
-
-6. In the terminal, paste the commands from step 4 above and execute them.
-
-![Running testing commands](./images/ws22.png?raw=true "Running testing commands")
-
-7. The commands may execute correctly or not. If they don't run correctly, you can come back later and debug. For now, we'll go ahead and add this code into a new GitHub repository like we did in lab 1.
-
-8. In the upper right of the main Workspace screen, click on the *Create repository* screen.
+8. The commands may execute correctly or not. If they don't run correctly, you can come back later and debug. For now, we'll go ahead and add this code into a new GitHub repository like we did in lab 1.8. In the upper right of the main Workspace screen, click on the *Create repository* screen.
 
 ![Create repo](./images/ws5.png?raw=true "Create repo")
+</br></br>
 
-9. Clicking on this button opens a dialog with a suggested name for the repo and a place for a description. The dialog includes a button to click to automatically generate the initial commit message. Click on that.
+9. As in Lab 1, clicking on this button opens a dialog with a suggested name for the repo and a place for a description. Let's update the suggested repository name so it doesn't conflict with the existing one. (I added a "-v2" suffix.) The dialog includes the button to click to automatically generate the initial commit message. Click on that.
 
-![Generate commit info](./images/ws6.png?raw=true "Generate commit info")
+![Generate commit info](./images/ws108.png?raw=true "Generate commit info")
+</br></br>
 
 10. After generating the description and clicking on the button, GitHub creates the repo and presents you with a dialog to *Open in GitHub* or *Start new session*. Click on *Open in GitHub*.
    
-![Opening in GitHub](./images/ws7.png?raw=true "Opening in GitHub")
+![Open in GitHub](./images/ws109.png?raw=true "Open in GitHub")
+</br>
+![Opening in GitHub](./images/ws110.png?raw=true "Opening in GitHub")
 
 
 
